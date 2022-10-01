@@ -28,7 +28,7 @@ switch (taskNumber)
         }
         break;
     case 2:
-    Console.WriteLine("Вы выбрали задачу №4");
+        Console.WriteLine("Вы выбрали задачу №4");
         Console.Write("Введите первое число:");
         int number2_1 = int.Parse(Console.ReadLine());
         Console.Write("Введите второе число:");
@@ -47,7 +47,17 @@ switch (taskNumber)
         Console.WriteLine($"max={max}");
         break;
     case 3:
-        Console.WriteLine("Среда");
+        Console.WriteLine("Вы выбрали задачу №6");
+        Console.Write("Введите число:");
+        int number3 = int.Parse(Console.ReadLine());
+        if(number3%2!=0)
+        {
+            Console.WriteLine($"Число {number3} нечетное!");
+        }
+        else
+        {
+             Console.WriteLine($"Число {number3} четное!");
+        }
         break;
     case 4:
         Console.WriteLine("Четверг");
