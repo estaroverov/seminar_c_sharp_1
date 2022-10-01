@@ -9,7 +9,23 @@ int taskNumber = int.Parse(Console.ReadLine());
 switch (taskNumber)
 {
     case 1:
-        Console.WriteLine("Понедельник");
+        Console.WriteLine("Вы выбрали задачу №2");
+        Console.Write("Введите первое число:");
+        int number1 = int.Parse(Console.ReadLine());
+        Console.Write("Введите второе число:");
+        int number2 = int.Parse(Console.ReadLine());
+        if(number1>number2)
+        {
+            Console.WriteLine($"Число {number1} больше числа {number2}");
+        }
+        else if(number2>number1)
+        {
+            Console.WriteLine($"Число {number2} больше числа {number1}");
+        }
+        else
+        {
+            Console.WriteLine($"Число {number1} равно числу {number2}");
+        }
         break;
     case 2:
         Console.WriteLine("Вторник");
