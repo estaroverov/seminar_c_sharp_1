@@ -75,7 +75,46 @@ switch (taskNumber)
         
         break;
     case 5:
-        Console.WriteLine("Четверг");
+        Console.WriteLine("Вы выбрали задачу повышенной сложности!");
+        Console.Write("Введите размер массива:");
+        int n = int.Parse(Console.ReadLine());
+        int[] arr = new int [n];
+        Console.WriteLine("Введите массив:");
+        for(int i=0; i<n; i++)
+        {
+            arr[i] = int.Parse(Console.ReadLine());
+        }
+        Console.Write("Введите индекс массива:");
+        int k = int.Parse(Console.ReadLine());
+        int sum1 = 0;
+        int sum2 = 0;
+        Console.Write("Массив:");
+        for(int j = 0; j<n; j++)
+        {
+            Console.Write(arr[j]+",");
+            if(j<=k)
+            {
+                sum1 = sum1 + arr[j];
+            }
+            else
+            {
+                sum2 = sum2 + arr[j];
+            }
+        }
+        Console.WriteLine($"сумма элементов из первой части:{sum1}");
+        Console.WriteLine($"Сумма элементов из второй части:{sum2}");
+        if(sum1>sum2)
+        {
+            Console.WriteLine($"Первая часть!");
+        }
+        else if(sum2>sum1)
+        {
+             Console.WriteLine("Вторая часть!");
+        }
+        else
+        {
+             Console.WriteLine("Обе части равны!");
+        }
         break;
     default:
         Console.WriteLine("Нет такой задачи");
