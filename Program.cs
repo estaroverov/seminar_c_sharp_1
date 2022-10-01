@@ -28,7 +28,23 @@ switch (taskNumber)
         }
         break;
     case 2:
-        Console.WriteLine("Вторник");
+    Console.WriteLine("Вы выбрали задачу №4");
+        Console.Write("Введите первое число:");
+        int number2_1 = int.Parse(Console.ReadLine());
+        Console.Write("Введите второе число:");
+        int number2_2 = int.Parse(Console.ReadLine());
+        Console.Write("Введите третье число:");
+        int number2_3 = int.Parse(Console.ReadLine());
+        int max = number2_1;
+        if(max<number2_2)
+        {
+            max = number2_2;
+        }
+        if(max < number2_3)
+        {
+            max = number2_3;
+        }
+        Console.WriteLine($"max={max}");
         break;
     case 3:
         Console.WriteLine("Среда");
