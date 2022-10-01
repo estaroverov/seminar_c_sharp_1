@@ -60,7 +60,19 @@ switch (taskNumber)
         }
         break;
     case 4:
-        Console.WriteLine("Четверг");
+        Console.WriteLine("Вы выбрали задачу №8");
+        Console.Write("Введите число:");
+        int number4 = int.Parse(Console.ReadLine());
+        int counter = 0;
+        while(counter<=number4)
+        {
+            if(counter%2==0 && counter !=0)
+            {
+                Console.WriteLine(counter);
+            }
+            counter++;
+        }
+        
         break;
     case 5:
         Console.WriteLine("Четверг");
