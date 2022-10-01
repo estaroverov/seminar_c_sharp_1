@@ -1,14 +1,14 @@
-﻿Console.WriteLine("1. Задача №2");
-Console.WriteLine("2. Задача №4");
-Console.WriteLine("3. Задача №6");
-Console.WriteLine("4. Задача №8");
-Console.WriteLine("5. Задача повышенной сложности");
+﻿Console.WriteLine("1. Задача №2"); // max и min 2ух чисел
+Console.WriteLine("2. Задача №4"); // max 3ех чисел
+Console.WriteLine("3. Задача №6"); // Является ли число четным
+Console.WriteLine("4. Задача №8"); // Показывает все четные числа от 1 до N
+Console.WriteLine("5. Задача повышенной сложности"); // Сравнение сумм элементов 2ух частей массива
 Console.Write("Выберите номер задачи:");
 int taskNumber = int.Parse(Console.ReadLine());
 
 switch (taskNumber)
 {
-    case 1:
+    case 1: // Первая задача (под номером 2 в ДЗ)
         Console.WriteLine("Вы выбрали задачу №2");
         Console.Write("Введите первое число:");
         int number1 = int.Parse(Console.ReadLine());
@@ -27,7 +27,7 @@ switch (taskNumber)
             Console.WriteLine($"Число {number1} равно числу {number2}");
         }
         break;
-    case 2:
+    case 2: // Вторая задача (под номером 4 в ДЗ)
         Console.WriteLine("Вы выбрали задачу №4");
         Console.Write("Введите первое число:");
         int number2_1 = int.Parse(Console.ReadLine());
@@ -46,7 +46,7 @@ switch (taskNumber)
         }
         Console.WriteLine($"max={max}");
         break;
-    case 3:
+    case 3: // Третья задача (под номером 6 в ДЗ)
         Console.WriteLine("Вы выбрали задачу №6");
         Console.Write("Введите число:");
         int number3 = int.Parse(Console.ReadLine());
@@ -59,7 +59,7 @@ switch (taskNumber)
              Console.WriteLine($"Число {number3} четное!");
         }
         break;
-    case 4:
+    case 4: // Четвертая задача (под номером 8 в ДЗ)
         Console.WriteLine("Вы выбрали задачу №8");
         Console.Write("Введите число:");
         int number4 = int.Parse(Console.ReadLine());
@@ -74,7 +74,7 @@ switch (taskNumber)
         }
         
         break;
-    case 5:
+    case 5: // Задача повышенной сложности 
         Console.WriteLine("Вы выбрали задачу повышенной сложности!");
         Console.Write("Введите размер массива:");
         int n = int.Parse(Console.ReadLine());
